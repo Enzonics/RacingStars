@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {},
     container: {
-      center: true
+      center: true,
       
+    },
+    card: {
+      center: true,
     },
     colors: {
       'grey': '#0681B1',
