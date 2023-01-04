@@ -21,23 +21,24 @@ async function birthdayObtain(){
     case day > 31:
       document.getElementById('birthday').innerHTML = 'Invalid day, please try again'
       document.getElementById('daysUntil').innerHTML = ''
-      break;
+    break;
     case month > 12:
       document.getElementById('birthday').innerHTML = 'Invalid month, please try again'
       document.getElementById('daysUntil').innerHTML = ''
-      break;
-    case month == 2:
-      birthdayCalc()
-      break;
-    case month == 2:
-    case day > 28:
-      document.getElementById('birthday').innerHTML = 'The Febuary Complex'
-      document.getElementById('daysUntil').innerHTML = 'Are you trying to trick me?'
-      break;
+    break;
     default:
       birthdayCalc();
-    break;
   }
+
+  // switch(month === 2) {
+  //   case day < 29:
+  //       document.getElementById('birthday').innerHTML = 'The Febuary Complex'
+  //       document.getElementById('daysUntil').innerHTML = 'Are you trying to trick me?'
+  //   break;
+  //   default:
+  //     birthdayCalc();
+
+  // }
 
 }
 
